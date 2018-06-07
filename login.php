@@ -1,3 +1,31 @@
+<?php
+include("config.php");
+   session_start();
+
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form
+
+      $myusername = mysqli_real_escape_string($db,$_POST['emailuser']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['passworduser']);
+
+      $sql = "SELECT id FROM user WHERE username = '$myusername' and password = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+      $count = mysqli_num_rows($result);
+
+      // If result matched $myusername and $mypassword, table row must be 1 row
+
+      if($count == 1) {
+         $_SESSION['login_user'] = $myusername;
+
+         header("location: page.php");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
+   }
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,16 +52,16 @@
               <h5 class="card-title">Sign in</h5>
               <h6 class="card-subtitle mb-2 text-muted">to continue to e-Vote</h6>
               <br>
-              <form>
+              <form action = "" method = "post">
 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" class="form-control" id="exampleInputEmail1" name="emailuser" aria-describedby="emailHelp" placeholder="Enter email">
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="passworduser" placeholder="Password">
                 </div>
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
