@@ -101,7 +101,7 @@ include('inputUser.php');
                 <input id="nomor" type="number" name="nomor" class="validate">
                 <label for="nomor">Nomor Telepon</label>
               </div>
-              <button class="btn waves-effect waves-light" type="submit" name="submit" style="background-color: #242b3c">Submit</button>
+                <button class="btn waves-effect waves-light" type="submit" name="submit" style="background-color: #242b3c">Submit</button>
               <b style="color: black"><?php echo $error; ?></b>
               </div>
             </form>

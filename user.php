@@ -20,7 +20,7 @@ include('session.php');
     <script type="text/javascript" src="assets/js/materialize.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/materialize.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
 
 
 
@@ -59,18 +59,14 @@ include('session.php');
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col s4">
-            <div class="card sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" <img src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+          <div class="col s3">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
               </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <div class="card-content center">
+                <span class="card-title grey-text text-darken-4 center">George Harrison</span>
+                <button class="btn-small waves-effect waves-light" type="submit" name="submit" style="background-color: #242b3c">Vote</button>
               </div>
               <div class="card-tabs">
                 <ul class="tabs tabs-fixed-width">
@@ -79,49 +75,122 @@ include('session.php');
                   <li class="tab"><a href="#proker">Proker</a></li>
                 </ul>
               </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+
               <div class="card-content grey lighten-4">
                 <div id="visi">
-                  asdsad</div>
-                <div id="misi">Test 2</div>
-                <div id="proker">Test 3</div>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div id="misi">
+                  Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                </div>
+                <div id="proker">
+                  As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                </div>
               </div>
             </div>
           </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          <div class="col s3">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+              </div>
+              <div class="card-content center">
+                <span class="card-title grey-text text-darken-4 center">George Harrison</span>
+                <button class="btn-small waves-effect waves-light" type="submit" name="submit" style="background-color: #242b3c">Vote</button>
               </div>
               <div class="card-tabs">
                 <ul class="tabs tabs-fixed-width">
-                  <li class="tab"><a href="#test4">Test 1</a></li>
-                  <li class="tab"><a class="active" href="#test5">Test 2</a></li>
-                  <li class="tab"><a href="#test6">Test 3</a></li>
+                  <li class="tab"><a class="active" href="#visi">Visi</a></li>
+                  <li class="tab"><a href="#misi">Misi</a></li>
+                  <li class="tab"><a href="#proker">Proker</a></li>
                 </ul>
               </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+
               <div class="card-content grey lighten-4">
-                <div id="test4">Test 1</div>
-                <div id="test5">Test 2</div>
-                <div id="test6">Test 3</div>
+                <div id="visi">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div id="misi">
+                  Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                </div>
+                <div id="proker">
+                  As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                </div>
               </div>
             </div>
           </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          <div class="col s3">
+            <div class="card hoverable">
+              <div class="card-image waves-effect">
+                <img class="activator"<img src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+              </div>
+              <div class="card-content center">
+                <span class="card-title activator grey-text text-darken-4 center">George Harrison</span>
+                <button class="btn-small waves-effect waves-light" type="submit" name="submit" style="background-color: #242b3c">Vote</button>
               </div>
               <div class="card-tabs">
                 <ul class="tabs tabs-fixed-width">
-                  <li class="tab"><a href="#test4">Test 1</a></li>
-                  <li class="tab"><a class="active" href="#test5">Test 2</a></li>
-                  <li class="tab"><a href="#test6">Test 3</a></li>
+                  <li class="tab"><a class="active" href="#visi">Visi</a></li>
+                  <li class="tab"><a href="#misi">Misi</a></li>
+                  <li class="tab"><a href="#proker">Proker</a></li>
                 </ul>
               </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
+              </div>
+
               <div class="card-content grey lighten-4">
-                <div id="test4">Test 1</div>
-                <div id="test5">Test 2</div>
-                <div id="test6">Test 3</div>
+                <div id="visi">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div id="misi">
+                  Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                </div>
+                <div id="proker">
+                  As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+              </div>
+              <div class="card-content center">
+                <span class="card-title grey-text text-darken-4 center">George Harrison</span>
+                <button class="btn-small waves-effect waves-light" type="submit" name="submit" style="background-color: #242b3c">Vote</button>
+              </div>
+              <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                  <li class="tab"><a class="active" href="#visi">Visi</a></li>
+                  <li class="tab"><a href="#misi">Misi</a></li>
+                  <li class="tab"><a href="#proker">Proker</a></li>
+                </ul>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+
+              <div class="card-content grey lighten-4">
+                <div id="visi">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div id="misi">
+                  Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                </div>
+                <div id="proker">
+                  As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                </div>
               </div>
             </div>
           </div>
