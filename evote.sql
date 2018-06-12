@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2018 at 12:29 PM
+-- Generation Time: Jun 12, 2018 at 05:50 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -62,15 +62,17 @@ CREATE TABLE `user` (
   `username` varchar(34) NOT NULL,
   `password` varchar(16) NOT NULL,
   `nama` varchar(34) NOT NULL,
-  `telepon` int(18) NOT NULL
+  `nomor` int(18) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `password`, `nama`, `telepon`) VALUES
+INSERT INTO `user` (`id`, `username`, `password`, `nama`, `nomor`) VALUES
 (99, 'admin', 'admin', 'Admin Aji', 666),
+(99, 'admin2', 'admin2', 'Admin Riza', 1234),
+(1, 'aji', 'aji', 'ajihsan', 12),
 (1, 'aji@evote.com', 'ajihsan', 'Muhammad', 813),
 (1, 'ajihsan@evote.com', 'ajihsan96', '', 0);
 
