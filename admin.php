@@ -2,45 +2,21 @@
 include('inputUser.php');
 ?>
 
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
 
-    <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
-    <title>e-Vote</title>
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script>
-        $(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-    });
-    </script>
-
-    <script>
-    $('.modal').modal({
-        dismissible: true, // Modal can be dismissed by clicking outside of the modal
-        opacity: .5, // Opacity of modal background
-        inDuration: 300, // Transition in duration
-        outDuration: 200, // Transition out duration
-        startingTop: '4%', // Starting top style attribute
-        endingTop: '10%', // Ending top style attribute
-        ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-          alert("Ready");
-          console.log(modal, trigger);
-        },
-        complete: function() { alert('Closed'); } // Callback for Modal close
-      }
-    );
-    </script>
-
-
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </head>
   <body>
     <header>

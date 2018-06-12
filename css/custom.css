@@ -1,4 +1,4 @@
-header, main, footer {
+header, main, footer{
   padding-left: 250px;
 }
 
@@ -7,7 +7,7 @@ header, main, footer {
     padding-left: 0;
   }
 }
-nav {
+nav{
   color: #fff;
   background-color: #242b3c;
   width: 100%;
@@ -15,7 +15,7 @@ nav {
   line-height: 50px;
 }
 
-.navbar-fixed {
+.navbar-fixed{
   position: relative;
   height: 50px;
   z-index: 997;
@@ -42,7 +42,7 @@ nav {
 
 /* sidenav */
 
-.sidenav {
+.sidenav{
   position: fixed;
   width: 250px;
   left: 0;
