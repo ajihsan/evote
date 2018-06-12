@@ -43,14 +43,14 @@
       <ul id="slide-out" class="sidenav sidenav-fixed">
         <li>
           <div class="user-view">
-            <div class="background">
-              <img src="assets/img/office.jpg">
+            <div class="background" style="background-color: #161a2d">
+              <!-- <img src="assets/img/office.jpg"> -->
             </div>
             <a href="#user"><img class="circle" src="assets/img/riza.jpg"></a>
-            <a href="#name"><span class="black-text name">Riza Setyawan Amadhy</span></a>
-            <a href="#email"><span class="black-text email">halo@rizasetyawan.com</span></a>
+            <a href="#name"><span class="white-text name">Riza Setyawan Amadhy</span></a>
+            <a href="#email"><span class="white-text email">halo@rizasetyawan.com</span></a>
           </div></li>
-          <li><a href="#!">First Sidebar Link</a></li>
+          <li><a href="#!">Setting User</a></li>
           <li><a href="#!">Second Sidebar Link</a></li>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
@@ -58,13 +58,15 @@
 
     <main>
       <nav>
-        <div class="navbar-fixed teal">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
+        <div class="navbar-fixed">
+          <div class="container-fluid">
+            <a href="#" class="brand-logo">Logo</a>
+            <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="sass.html">Sass</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">JavaScript</a></li>
+            </ul> -->
+          </div>
         </div>
       </nav>
 
@@ -72,9 +74,9 @@
         <div class="row">
 
 
-          <div class="col s6">
+          <div class="col s12 m6">
             <div class="card-panel">
-              <span class="h4">Pembuatan User</span>
+              <span class="h1">Pembuatan User</span>
               <div class="card-content white-text">
               <div class="input-field">
                 <input id="username" type="text" class="validate">
@@ -84,15 +86,25 @@
                 <input id="password" type="password" class="validate">
                 <label for="password">Password</label>
               </div>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+              <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color: #242b3c">Submit</button>
               </div>
             </div>
           </div>
-
-
-          <div class="col s6">
+        </div>
+        <div class="row">
+          <div class="col s12">
             <div class="card-panel">
-              <span class="h4">Data User</span>
+              <div class="row">
+                <div class="col s6 valign-wrapper">
+                  <span class="h1">Data User</span>
+                </div>
+                <div class="col s6">
+                  <div class="input-field">
+                    <input id="search" type="search" placeholder="Search user...">
+                  </div>
+                </div>
+              </div>
+
 
                 <table>
                   <thead>
@@ -107,7 +119,7 @@
                     <tr>
                       <td>Alvin</td>
                       <td>Eclair</td>
-                      <td><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Edit</a></td>
+                      <td><a class="waves-effect waves-light btn modal-trigger blueblack" href="#modal1">Edit</a></td>
                       <div id="modal1" class="modal">
                         <div class="modal-content">
                           <h4>Modal Header</h4>
