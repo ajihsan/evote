@@ -1,3 +1,7 @@
+<?php
+include('session.php');
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,10 +34,10 @@
               <!-- <img src="assets/img/office.jpg"> -->
             </div>
             <a href="#user"><img class="circle" src="assets/img/riza.jpg"></a>
-            <a href="#name"><span class="white-text name">Riza Setyawan Amadhy</span></a>
+            <a href="#name"><span class="white-text name"><?php echo $login_session; ?></span></a>
             <a href="#email"><span class="white-text email">halo@rizasetyawan.com</span></a>
           </div></li>
-          <li><a href="#!"></a></li>
+          <li><a id="logout" href="logout.php">Log Out</a></li>
           <li><a href="#!"></a></li>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger"></a>

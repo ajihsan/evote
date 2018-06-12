@@ -22,7 +22,7 @@ include("config.php");
         if ($logged_in_user['id'] == 1) {
           $_SESSION['login_user'] = $myusername;
 
-          header("location: page.php");
+          header("location: user.php");
         }
         elseif ($logged_in_user['id'] == 99) {
           $_SESSION['login_user'] = $myusername;
