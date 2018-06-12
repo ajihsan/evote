@@ -11,6 +11,7 @@
    $login_session = $row['username'];
 
    if(!isset($login_session)){
-      header("location:login.php");
+      mysqli_close($db);
+      header("location:index.php");
    }
 ?>

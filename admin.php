@@ -1,3 +1,7 @@
+<?php
+include('session.php');
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -51,7 +55,7 @@
             <a href="#email"><span class="white-text email">halo@rizasetyawan.com</span></a>
           </div></li>
           <li><a href="#!">Setting User</a></li>
-          <li><a href="#!">Second Sidebar Link</a></li>
+          <li><a id="logout" href="logout.php">Log Out</a></li>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
     </header>
