@@ -34,8 +34,8 @@ include('session.php');
               <!-- <img src="assets/img/office.jpg"> -->
             </div>
             <a href="#user"><img class="circle" src="assets/img/riza.jpg"></a>
-            <a href="#name"><span class="white-text name"><?php echo $login_session; ?></span></a>
-            <a href="#email"><span class="white-text email">halo@rizasetyawan.com</span></a>
+            <a href="#name"><span class="white-text name"><?php echo $nama_user; ?></span></a>
+            <a href="#email"><span class="white-text email"><?php echo $login_session; ?></span></a>
           </div></li>
           <li><a id="logout" href="logout.php">Log Out</a></li>
           <li><a href="#!"></a></li>

@@ -19,6 +19,7 @@ include("config.php");
       if($count == 1) {
         // cek user atau admin
         $logged_in_user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
         if ($logged_in_user['id'] == 1) {
           $_SESSION['login_user'] = $myusername;
 
