@@ -19,14 +19,15 @@ include('session.php');
     <script type="text/javascript" src="js/materialize.min.js"></script>
   </head>
   <body>
-    <header>
+
+    <!-- <header>
       <ul id="slide-out" class="sidenav sidenav-fixed">
         <li>
           <div class="user-view">
             <div class="background" style="background-color: #161a2d">
-              <!-- <img src="assets/img/office.jpg"> -->
+              <img src="assets/img/office.jpg">
             </div>
-            <a href="#user"><img class="circle" src="assets/img/riza.jpg"></a>
+            <a href="#user"><img class="circle" src="img/riza.jpg"></a>
             <a href="#name"><span class="white-text name"><?php echo $nama_user; ?></span></a>
             <a href="#email"><span class="white-text email"><?php echo $login_session; ?></span></a>
           </div>
@@ -35,70 +36,103 @@ include('session.php');
           <li><a href="#!"></a></li>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
-    </header>
+    </header> -->
 
-    <main>
+
       <nav>
-        <div class="navbar-fixed">
+        <div class=" container-fluid navbar-fixed blueblack">
           <div class="container-fluid">
             <a href="#" class="brand-logo">Logo</a>
-            <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
-            </ul> -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><p>Selamat Datang,</p></li>
+              <li><a class="waves-effect waves-light btn-small red" id="logout" href="logout.php">Log Out</a></li>
+            </ul>
           </div>
         </div>
       </nav>
 
+      <h4 class="center blueblack-text"> Pemilu: Kepala Daerah Jawa Barat</h4>
       <div class="container-fluid">
         <div class="row">
+
+<!-- CARD KEPALA DAERAH  -->
           <div class="col s3">
-            <div class="card hoverable">
-              <div class="card-image">
-                <img src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="responsive-img" src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+              </div>
+              <div class="row">
+
               </div>
               <div class="card-content center">
-                <span class="card-title grey-text text-darken-4 center">George Harrison</span>
-                <button class="btn-small waves-effect waves-light" type="submit" name="submit" style="background-color: #242b3c">Vote</button>
+                <h5 class="card-title blue-text activator center">George Harrison</h5>
+                <p>Hey I'm George, i want to be president next week , i need your vote but i cant give u money dude fuck u </p>
               </div>
-              <div class="card-tabs">
-                <ul class="tabs tabs-fixed-width">
-                  <li class="tab"><a class="active" href="#visi">Visi</a></li>
-                  <li class="tab"><a href="#misi">Misi</a></li>
-                  <li class="tab"><a href="#proker">Proker</a></li>
-                </ul>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-
-              <div class="card-content grey lighten-4">
-                <div id="visi">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
-                <div id="misi">
-                  Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
-                </div>
-                <div id="proker">
-                  As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                </div>
+              <div class="card-action center">
+                <button class="btn-small waves-effect waves-light blueblack" type="submit" name="submit">Apa aja</button>
+                <button class="btn-small waves-effect waves-light red" type="submit" name="submit">Vote</button>
               </div>
             </div>
           </div>
           <div class="col s3">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="responsive-img" src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+              </div>
+              <div class="row">
+
+              </div>
+              <div class="card-content center">
+                <h5 class="card-title blue-text activator center">George Harrison</h5>
+                <p>Hey I'm George, i want to be president next week , i need your vote but i cant give u money dude fuck u </p>
+              </div>
+              <div class="card-action center">
+                <button class="btn-small waves-effect waves-light blueblack" type="submit" name="submit">Apa aja</button>
+                <button class="btn-small waves-effect waves-light red" type="submit" name="submit">Vote</button>
+              </div>
+            </div>
           </div>
           <div class="col s3">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="responsive-img" src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+              </div>
+              <div class="row">
+
+              </div>
+              <div class="card-content center">
+                <h5 class="card-title blue-text activator center">George Harrison</h5>
+                <p>Hey I'm George, i want to be president next week , i need your vote but i cant give u money dude fuck u </p>
+              </div>
+              <div class="card-action center">
+                <button class="btn-small waves-effect waves-light blueblack" type="submit" name="submit">Apa aja</button>
+                <button class="btn-small waves-effect waves-light red" type="submit" name="submit">Vote</button>
+              </div>
+            </div>
           </div>
           <div class="col s3">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="responsive-img" src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
+              </div>
+              <div class="row">
+
+              </div>
+              <div class="card-content center">
+                <h5 class="card-title blue-text activator center">George Harrison</h5>
+                <p>Hey I'm George, i want to be president next week , i need your vote but i cant give u money dude fuck u </p>
+              </div>
+              <div class="card-action center">
+                <button class="btn-small waves-effect waves-light blueblack" type="submit" name="submit">Apa aja</button>
+                <button class="btn-small waves-effect waves-light red" type="submit" name="submit">Vote</button>
+              </div>
+            </div>
           </div>
+
+<!-- KELAR CARD KEPALA DAERAH  -->
         </div>
       </div>
-    </main>
-    <footer>
 
-    </footer>
 
   </body>
 
