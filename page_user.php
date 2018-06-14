@@ -20,25 +20,7 @@ include('session.php');
   </head>
   <body>
 
-    <!-- <header>
-      <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li>
-          <div class="user-view">
-            <div class="background" style="background-color: #161a2d">
-              <img src="assets/img/office.jpg">
-            </div>
-            <a href="#user"><img class="circle" src="img/riza.jpg"></a>
-            <a href="#name"><span class="white-text name"><?php echo $nama_user; ?></span></a>
-            <a href="#email"><span class="white-text email"><?php echo $login_session; ?></span></a>
-          </div>
-        </li>
-          <li><a id="logout" href="logout.php">Log Out</a></li>
-          <li><a href="#!"></a></li>
-      </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
-    </header> -->
-
-
+<!-- NAViGATION BAR  -->
       <nav>
         <div class=" container-fluid navbar-fixed blueblack">
           <div class="container-fluid">
@@ -51,6 +33,8 @@ include('session.php');
         </div>
       </nav>
 
+
+<!-- JUDUL  -->
       <h4 class="center blueblack-text"> Pemilu: Kepala Daerah Jawa Barat</h4>
       <div class="container-fluid">
         <div class="row">
