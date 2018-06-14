@@ -13,6 +13,6 @@
 
    if(!isset($login_session)){
       mysqli_close($db);
-      header("location:index.php");
+      header("location:page_landing.php");
    }
 ?>

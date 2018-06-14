@@ -7,7 +7,7 @@ header, main, footer{
     padding-left: 0;
   }
 }
-nav{
+ nav{
   color: #fff;
   background-color: #2C3E50;
   width: 100%;
@@ -37,7 +37,7 @@ nav{
   .navbar-fixed {
     height: 50px;
   }
-}
+} 
 
 
 /* sidenav */
