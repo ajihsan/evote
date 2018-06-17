@@ -20,38 +20,48 @@ include('inputUser.php');
     <script type="text/javascript" src="js/materialize.min.js"></script>
   </head>
   <body>
+
+
+    <!-- SIDEBAR -->
     <header>
       <ul id="slide-out" class="sidenav sidenav-fixed">
         <li>
           <div class="user-view">
-            <div class="background" style="background-color: #161a2d">
+            <div class="background blueblack" >
               <!-- <img src="assets/img/office.jpg"> -->
             </div>
-            <a href="#user"><img class="circle" src="assets/img/riza.jpg"></a>
+            <a href="#user"><img class="circle" src="img/riza.jpg"></a>
             <a href="#name"><span class="white-text name"><?php echo $nama_user; ?></span></a>
             <a href="#email"><span class="white-text email"><?php echo $login_session; ?></span></a>
           </div></li>
-          <li><a href="#!">Setting User</a></li>
+          <li class="active"><a class="waves-effect" href="#settinguser">Setting User</a></li>
+          <li><a class="waves-effect"href="#test">Test</a></li>
           <li><a id="logout" href="logout.php">Log Out</a></li>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
     </header>
 
-    <main>
-      <nav>
-        <div class="navbar-fixed">
-          <div class="container-fluid">
-            <a href="#" class="brand-logo">Logo</a>
-            <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
-            </ul> -->
-          </div>
-        </div>
-      </nav>
 
-      <div class="container-fluid">
+    <!-- NAVBAR -->
+    <main>
+
+        <div class="navbar-fixed">
+          <nav>
+            <div class="container-fluid">
+              <a href="#" class="brand-logo">Logo</a>
+              <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+              </ul> -->
+            </div>
+          </nav>
+        </div>
+
+
+
+      <!-- KONTEN TENGAH -->
+      <div class="container-fluid" id="settinguser">
         <div class="row">
           <div class="col s12 m6">
             <div class="card-panel">
@@ -122,7 +132,7 @@ include('inputUser.php');
                     echo "<td>" . $dataUser['username'] . "</td>";
                     echo "<td>" . $dataUser['password'] . "</td>";
                     echo "<td>" . $dataUser['nama'] . "</td>";
-                    echo "<td>" . $dataUser['nomor'] . "</td>";
+                    // echo "<td>" . $dataUser['nomor'] . "</td>";
                     echo '<td><a class="waves-effect waves-light btn modal-trigger blueblack" href="#modal1">Edit</a></td>';
                     }
                     ?>
@@ -143,6 +153,11 @@ include('inputUser.php');
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="container-fluid" id="test">
+        <h4>asdasd </h4>
+
       </div>
 
 

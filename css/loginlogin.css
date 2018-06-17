@@ -1,5 +1,5 @@
 header, main, footer{
-  padding-left: 250px;
+  padding-left: 300px;
 }
 
 @media only screen and (max-width : 992px) {
@@ -7,7 +7,7 @@ header, main, footer{
     padding-left: 0;
   }
 }
- nav{
+nav{
   color: #fff;
   background-color: #2C3E50;
   width: 100%;
@@ -37,14 +37,14 @@ header, main, footer{
   .navbar-fixed {
     height: 50px;
   }
-} 
+}
 
 
 /* sidenav */
 
 .sidenav{
   position: fixed;
-  width: 250px;
+  width: 300px;
   left: 0;
   top: 0;
   margin: 0;
@@ -98,10 +98,21 @@ body {
   margin: 0;
   background-color: #ECF0F1;
 }
-
-.landing{
-  background: url("http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424") no-repeat center center fixed;
-  background-size: cover;
+.samping{
+  width: 100%;
   height: 100%;
-  overflow: hidden;
+}
+.landing{
+/*
+    max-width:100%;
+    height:auto;
+    max-height:100%; */
+    height: 100vh;
+    width: 100%;
+    background-image: url("http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
 }
