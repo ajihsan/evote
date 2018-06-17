@@ -11,8 +11,8 @@
    $login_session = $row['username'];
    $nama_user = $row['nama'];
 
-   if(($_SESSION['login_user']) != '99'){
-      mysqli_close($db);
+   if($_SESSION['login_user'] != '99') {
+      session_destroy();
       header("location:page_landing.php");
    }
 ?>

@@ -12,7 +12,7 @@
    $nama_user = $row['nama'];
 
    if(($_SESSION['login_user']) != '1'){
-      mysqli_close($db);
+      session_destroy();
       header("location:page_landing.php");
    }
 ?>
