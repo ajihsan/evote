@@ -5,6 +5,7 @@ include('inputUser.php');
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Voting Pilkada Jabar</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -99,9 +100,6 @@ include('inputUser.php');
                 </div>
               </div>
 
-              <?php
-              $sqlShow = mysqli_query($db,"select * from user");
-              ?>
                 <table>
                   <thead>
                     <tr>
@@ -116,6 +114,7 @@ include('inputUser.php');
 
                   <tbody>
                     <?php
+                    $sqlShow = mysqli_query($db,"select * from user");
                     while($dataUser = mysqli_fetch_array($sqlShow,MYSQLI_ASSOC))
                     {
                     echo "<tr>";
