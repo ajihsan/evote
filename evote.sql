@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2018 at 05:50 PM
+-- Generation Time: Jun 17, 2018 at 05:20 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -38,18 +38,19 @@ CREATE TABLE `paslon_jabar` (
   `misi2` varchar(200) NOT NULL,
   `misi3` varchar(200) NOT NULL,
   `misi4` varchar(200) NOT NULL,
-  `misi5` varchar(200) NOT NULL
+  `misi5` varchar(200) NOT NULL,
+  `foto` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `paslon_jabar`
 --
 
-INSERT INTO `paslon_jabar` (`id`, `slogan`, `cagub`, `cawagub`, `visi`, `misi1`, `misi2`, `misi3`, `misi4`, `misi5`) VALUES
-(1, 'Rindu', 'Ridwan Kamil', 'Uu Ruzhanul Ulum', 'Terwujudnya Jabar Juara Lahir Batin dengan Inovasi dan Kolaborasi', '', '', '', '', ''),
-(2, 'Hasanah', 'TB Hasanudin', 'Anton Charliyan', 'Terwujudnya Rakyat Jawa Barat Makmur Berbasiskan Sumber Daya Alam dan Budaya', '', '', '', '', ''),
-(3, 'Asyik', 'Sudrajat', 'Ahmad Syaikhu', 'Jawa Barat Termaju, Bertakwa, Aman, dan Sejahtera untuk Semua', '', '', '', '', ''),
-(4, 'DM4Jabar', 'Deddy Mizwar', 'Dedi Mulyadi', 'Terwujudnya Jawa Barat yang Adil, Sejahtera, dan Berkarakter', '', '', '', '', '');
+INSERT INTO `paslon_jabar` (`id`, `slogan`, `cagub`, `cawagub`, `visi`, `misi1`, `misi2`, `misi3`, `misi4`, `misi5`, `foto`) VALUES
+(1, 'Rindu', 'Ridwan Kamil', 'Uu Ruzhanul Ulum', 'Terwujudnya Jabar Juara Lahir Batin dengan Inovasi dan Kolaborasi', 'Tes Misi Rindu', 'Tes Misi Rindu2', 'Tes Misi Rindu3', 'Tes Misi Rindu4', 'Tes Misi Rindu5', 'https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/29594478_1992362697684454_8112571844487171156_n.jpg?_nc_cat=0&oh=04e9cc5fe82df31843a49d4d61a3b981&oe=5BBF0978'),
+(2, 'Hasanah', 'TB Hasanudin', 'Anton Charliyan', 'Terwujudnya Rakyat Jawa Barat Makmur Berbasiskan Sumber Daya Alam dan Budaya', 'Tes misi Hasanah', '', '', '', '', 'https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/33232492_174868046532954_8782548842840064000_n.jpg?_nc_cat=0&oh=3915ba7a66b891e0af143a61b92c299f&oe=5BABA620'),
+(3, 'Asyik', 'Sudrajat', 'Ahmad Syaikhu', 'Jawa Barat Termaju, Bertakwa, Aman, dan Sejahtera untuk Semua', 'tes misi asyik', '', '', '', '', 'https://pbs.twimg.com/media/DV9EuBkVMAApDdJ.jpg:large'),
+(4, 'DM4Jabar', 'Deddy Mizwar', 'Dedi Mulyadi', 'Terwujudnya Jawa Barat yang Adil, Sejahtera, dan Berkarakter', 'tes misi 2 dm', '', '', '', '', 'https://pbs.twimg.com/media/DWLnZrZUQAAK2MQ.jpg:large');
 
 -- --------------------------------------------------------
 
