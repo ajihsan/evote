@@ -21,12 +21,12 @@ include("config.php");
         $logged_in_user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
         if ($logged_in_user['id'] == 1) {
-          $_SESSION['login_user'] = $myusername;
+          $_SESSION['login_user'] = $logged_in_user['id'];
 
           header("location: page_user.php");
         }
         elseif ($logged_in_user['id'] == 99) {
-          $_SESSION['login_user'] = $myusername;
+          $_SESSION['login_user'] = $logged_in_user['id'];
 
           header("location: page_admin.php");
         }

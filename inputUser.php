@@ -1,5 +1,5 @@
 <?php
-include('session.php');
+include('sessionAdmin.php');
 
 $error='';
 if($_SERVER["REQUEST_METHOD"] == "POST") {
