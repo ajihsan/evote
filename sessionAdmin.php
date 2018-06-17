@@ -13,6 +13,7 @@
 
    if($_SESSION['login_user'] != '99') {
       session_destroy();
+      mysqli_close($db);
       header("location:page_landing.php");
    }
 ?>
