@@ -18,8 +18,10 @@ include('inputUser.php');
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
   </head>
   <body>
 
@@ -120,22 +122,14 @@ include('inputUser.php');
                      </p>
                     </div>
                   </div>
-<script type="text/javascript">
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems, options);
-});
 
-
-
-</script>
                   <div class="col s6">
                     <div class="col s12">
                       <input type="text" class="datepicker">
                     </div>
                     <div class="col s6">
                       <div class="input-field">
-                        <select>
+                        <select class="">
                           <option value="" disabled selected>Choose your option</option>
                           <option value="1">Option 1</option>
                           <option value="2">Option 2</option>
@@ -309,11 +303,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     </main>
-    <footer>
+    <footer class="page-footer blueblack">
+      <div class="container-fluid">
+              <div class="col s12 center">
+                <a class="h5 grey-text text-lighten-3 col s3" href="#!">About</a>
+                <a class="h5 grey-text text-lighten-3 col s3" href="#!">Legal Information</a>
+                <a class="h5 grey-text text-lighten-3 col s3" href="#!">Contact</a>
+                <a class="h5 grey-text text-lighten-3 col s3" href="#!">Term Of Service</a>
+
+              </div>
+
+          </div>
+          <div class="footer-copyright blueblack lighten-3">
+            <div class="container center">
+            Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.<br> © 2018 Evote All right reserved
+            </div>
+          </div>
 
     </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/materialize.js"></script>
   </body>
 
 </html>
