@@ -16,7 +16,10 @@ include('inputUser.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
   </head>
   <body>
 
@@ -61,6 +64,99 @@ include('inputUser.php');
 
       <!-- KONTEN TENGAH -->
       <div class="container-fluid" id="settinguser">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel col s12">
+              <span class="h1"> Pembuatan User</span>
+              <div class="card-content white-text">
+                <form action="" method="post">
+                  <div class="col s6">
+                    <div class="col s12">
+                      <div class="file-field input-field">
+                        <div class="btn">
+                          <span>File</span>
+                          <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s6">
+                      <div class="input-field">
+                        <input id="username" type="text" name="username" class="validate">
+                        <label for="username">Username</label>
+                      </div>
+                    </div>
+                    <div class="col s6">
+                      <div class="input-field">
+                        <input id="nama" type="text" name="nama" class="validate">
+                        <label for="nama">Nama Lengkap</label>
+                      </div>
+                    </div>
+                    <div class="col s6">
+                      <div class="input-field">
+                        <input id="nomor" type="number" name="nomor" class="validate">
+                        <label for="nomor">Nomor Telepon</label>
+                      </div>
+                    </div>
+                    <div class="col s6">
+                      <div class="input-field">
+                        <input id="email" type="email" name="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <div class="col s6 inline">
+                      <p class="">
+
+                       <label>
+                         <input name="group1" type="radio" checked />
+                         <span>Laki Laki</span>
+                       </label>
+                       <label>
+                         <input name="group1" type="radio" />
+                         <span>Perempuan</span>
+                       </label>
+                     </p>
+                    </div>
+                  </div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, options);
+});
+
+
+
+</script>
+                  <div class="col s6">
+                    <div class="col s12">
+                      <input type="text" class="datepicker">
+                    </div>
+                    <div class="col s6">
+                      <div class="input-field">
+                        <select>
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Select</label>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
         <div class="row">
           <div class="col s12 m6">
             <div class="card-panel">
@@ -156,10 +252,59 @@ include('inputUser.php');
         </div>
       </div>
 
-      <div class="container-fluid" id="test">
-        <h4>asdasd </h4>
 
+
+      <!-- PIE CHART -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col s6">
+            <div class="card"> <!--warna-->
+              <div class="card-content black-text">
+                <div class="chart-responsive">
+                  <canvas id="myChart" height="150"></canvas>
+                  <script type="text/javascript">
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var myChart = new Chart (ctx,{
+                      type:'pie',
+                      data:{
+                        labels:  ["Red", "Blue", "Yellow", "Green"],
+                        datasets:[{
+                          label: "# of votes",
+                          data: [12, 19, 4, 3],
+                          backgroundColor:[
+                          'rgba(135, 206, 235, 0.6)',
+                          'rgba(255, 182, 193, 0.6)',
+                          'rgba(75, 192, 192, 0.2)',
+                          'rgba(153, 102, 255, 0.2)'
+                        ],
+
+                        }]
+                      },
+                      options: {
+                        title:{
+                        display:true,
+                        text:'Hasil Voting Pilkada Jabar',
+                        textSize:25
+                      },
+                      legend:{
+                        position:'bottom',
+                        labels:{
+                          fontColor:'#000'
+                        }
+                      }
+                      }
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col s6">
+          </div>
+        </div><!-- endchart -->
       </div>
+
 
 
 
