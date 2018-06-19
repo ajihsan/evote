@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 17, 2018 at 05:20 PM
+-- Generation Time: Jun 19, 2018 at 10:57 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `evote`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hasil_voting`
+--
+
+CREATE TABLE `hasil_voting` (
+  `tanggal` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+  `username` varchar(34) NOT NULL,
+  `id_paslon` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `hasil_voting`
+--
+
+INSERT INTO `hasil_voting` (`tanggal`, `username`, `id_paslon`) VALUES
+('2018-06-19 06:02:47.301393', 'admin', 3),
+('2018-06-19 08:43:29.641352', 'aji', 2),
+('2018-06-19 06:47:20.265726', 'aji@evote.com', 2),
+('2018-06-19 06:47:30.409307', 'ajihsan@evote.com', 4);
 
 -- --------------------------------------------------------
 
@@ -82,12 +104,17 @@ INSERT INTO `user` (`id`, `username`, `password`, `nama`, `nomor`) VALUES
 --
 
 --
+-- Indexes for table `hasil_voting`
+--
+ALTER TABLE `hasil_voting`
+  ADD PRIMARY KEY (`username`),
+  ADD KEY `id_paslon` (`id_paslon`);
+
+--
 -- Indexes for table `paslon_jabar`
 --
 ALTER TABLE `paslon_jabar`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `slogan` (`slogan`),
-  ADD KEY `slogan_2` (`slogan`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user`
@@ -104,6 +131,17 @@ ALTER TABLE `user`
 --
 ALTER TABLE `paslon_jabar`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `hasil_voting`
+--
+ALTER TABLE `hasil_voting`
+  ADD CONSTRAINT `hasil_voting_ibfk_1` FOREIGN KEY (`username`) REFERENCES `user` (`username`),
+  ADD CONSTRAINT `hasil_voting_ibfk_2` FOREIGN KEY (`id_paslon`) REFERENCES `paslon_jabar` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

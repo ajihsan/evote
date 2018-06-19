@@ -199,23 +199,22 @@ include('inputUser.php');
                 </div>
               </div>
 
-              <?php
-              $sqlShow = mysqli_query($db,"select * from user");
-              ?>
                 <table>
                   <thead>
                     <tr>
                         <th>ID</th>
-                        <th>username</th>
+                        <th>Username</th>
                         <th>Password</th>
                         <th>Nama</th>
-                        <th>Nomor</th>
+                        <th>Nomor HP</th>
                         <th>Action</th>
                     </tr>
                   </thead>
 
                   <tbody>
+                    <!-- MENAMPILKAN DATABASE -->
                     <?php
+                    $sqlShow = mysqli_query($db,"SELECT * FROM user");
                     while($dataUser = mysqli_fetch_array($sqlShow,MYSQLI_ASSOC))
                     {
                     echo "<tr>";
@@ -223,7 +222,7 @@ include('inputUser.php');
                     echo "<td>" . $dataUser['username'] . "</td>";
                     echo "<td>" . $dataUser['password'] . "</td>";
                     echo "<td>" . $dataUser['nama'] . "</td>";
-                    // echo "<td>" . $dataUser['nomor'] . "</td>";
+                    echo "<td>" . $dataUser['nomor'] . "</td>";
                     echo '<td><a class="waves-effect waves-light btn modal-trigger blueblack" href="#modal1">Edit</a></td>';
                     }
                     ?>
@@ -261,10 +260,20 @@ include('inputUser.php');
                     var myChart = new Chart (ctx,{
                       type:'pie',
                       data:{
-                        labels:  ["Red", "Blue", "Yellow", "Green"],
+                        labels:  ["Rindu", "Hasanah", "Asyik", "DM4Jabar"],
                         datasets:[{
                           label: "# of votes",
-                          data: [12, 19, 4, 3],
+                          <?php
+                          $sqlHasil = mysqli_query($db,"SELECT SUM(CASE WHEN id_paslon = 1 THEN 1 ELSE 0 END) AS HASIL_1,
+                                      SUM(CASE WHEN id_paslon = 2 THEN 1 ELSE 0 END) AS HASIL_2,
+                                      SUM(CASE WHEN id_paslon = 3 THEN 1 ELSE 0 END) AS HASIL_3,
+                                      SUM(CASE WHEN id_paslon = 4 THEN 1 ELSE 0 END) AS HASIL_4
+                                      FROM hasil_voting");
+
+                          while ($dataHasil = mysqli_fetch_array($sqlHasil, MYSQLI_ASSOC)) {
+                          echo 'data: ['. $dataHasil['HASIL_1'] .','. $dataHasil['HASIL_2'] .','. $dataHasil['HASIL_3'] .','. $dataHasil['HASIL_4'] .'],';
+                          }
+                          ?>
                           backgroundColor:[
                           'rgba(135, 206, 235, 0.6)',
                           'rgba(255, 182, 193, 0.6)',

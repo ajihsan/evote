@@ -39,7 +39,7 @@ include('sessionUser.php');
       <h4 class="center blueblack-text"> Pemilu: Kepala Daerah Jawa Barat</h4>
       <div class="container-fluid">
         <div class="row">
-        <form method="post" action="">
+        <form action="voting.php" method="post">
 
 <!-- CARD KEPALA DAERAH  -->
         <?php
@@ -49,7 +49,6 @@ include('sessionUser.php');
         $x = 1;
         while($dataPaslon = mysqli_fetch_array($sqlShow,MYSQLI_ASSOC))
         {
-
         echo '<div class="col s3">';
           echo '<div class="card-panel grey lighten-5 z-depth-1 hoverable">';
             echo '<div class="card-image waves-effect waves-block waves-light">';
@@ -86,7 +85,7 @@ include('sessionUser.php');
                 echo '</div> -->';
               echo '</div>';
 
-              echo '<button class="btn-small waves-effect waves-light red" type="submit" name="submit'. $x .'">Vote</button>';
+              echo '<button class="btn-small waves-effect waves-light red" type="submit" name="mysubmit" value="'. $x .'">Vote</button>';
             echo '</div>';
           echo '</div>';
         echo '</div>';
@@ -99,7 +98,7 @@ include('sessionUser.php');
 
 
 
-          <div class="col s3 offset-s9">
+          <!-- <div class="col s3 offset-s9">
             <div class="card-panel grey lighten-5 z-depth-1 hoverable">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="responsive-img" src="http://cdnsecakmi.kaltura.com/p/537811/sp/53781100/thumbnail/entry_id/0_yazr5vgv/version/100041/width/754/height/424">
@@ -116,7 +115,7 @@ include('sessionUser.php');
                 <button class="btn-small waves-effect waves-light red" type="submit" name="submit">Vote</button>
               </div>
             </div>
-          </div>
+          </div> -->
 
 <!-- KELAR CARD KEPALA DAERAH  -->
         </div>
