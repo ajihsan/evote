@@ -1,5 +1,7 @@
 <?php
 include('login.php'); // Includes Login Script
+require_once('settings.php'); //login google
+$login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me') . '&redirect_uri=' . urlencode(CLIENT_REDIRECT_URL) . '&response_type=code&client_id=' . CLIENT_ID . '&access_type=online';
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +41,7 @@ include('login.php'); // Includes Login Script
                   <div class="row">
                     <button class="btn-small waves-effect waves-light red right hoverable" type="submit">Login</button>
                   </div>
+                  <a href="<?= $login_url ?>">Login with Google</a>
 
                 </div>
               </form>

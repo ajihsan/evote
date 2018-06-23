@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2018 at 10:57 AM
+-- Generation Time: Jun 23, 2018 at 10:38 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -39,10 +39,10 @@ CREATE TABLE `hasil_voting` (
 --
 
 INSERT INTO `hasil_voting` (`tanggal`, `username`, `id_paslon`) VALUES
-('2018-06-19 06:02:47.301393', 'admin', 3),
 ('2018-06-19 08:43:29.641352', 'aji', 2),
-('2018-06-19 06:47:20.265726', 'aji@evote.com', 2),
-('2018-06-19 06:47:30.409307', 'ajihsan@evote.com', 4);
+('2018-06-19 06:47:20.265726', 'aji@evote.com', 1),
+('2018-06-23 08:00:47.465283', 'ajihsan96@gmail.com', 3),
+('2018-06-19 06:47:30.409307', 'ajihsan@evote.com', 1);
 
 -- --------------------------------------------------------
 
@@ -97,6 +97,7 @@ INSERT INTO `user` (`id`, `username`, `password`, `nama`, `nomor`) VALUES
 (99, 'admin2', 'admin2', 'Admin Riza', 1234),
 (1, 'aji', 'aji', 'ajihsan', 12),
 (1, 'aji@evote.com', 'ajihsan', 'Muhammad', 813),
+(1, 'ajihsan96@gmail.com', '', 'Aji Ihsan', 0),
 (1, 'ajihsan@evote.com', 'ajihsan96', '', 0);
 
 --
