@@ -21,7 +21,7 @@ include('inputUser.php');
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   </head>
   <body>
 
@@ -128,7 +128,7 @@ include('inputUser.php');
                       <input type="text" class="datepicker">
                     </div>
                     <div class="col s6">
-                      <div class="input-field">
+                      <div class="input-field default-browser">
                         <select class="">
                           <option value="" disabled selected>Choose your option</option>
                           <option value="1">Option 1</option>
@@ -193,9 +193,19 @@ include('inputUser.php');
                   <span class="h1">Data User</span>
                 </div>
                 <div class="col s6">
-                  <div class="input-field">
-                    <input id="search" type="search" placeholder="Search user...">
-                  </div>
+                  <form action="" class="browser-default right ">
+                    <input id="search-input" placeholder="Search" type="text" class="browser-default search-field" name="q" value="" autocomplete="off" aria-label="Search box">
+                    <label for="search-input"></label>
+                    <div class="search-popup">
+                      <div class="search-content">
+                        <label class="search-heading">Most Frequent</label>
+                        <ul class="popup-list">
+                          <li class=""><a class="grey-text" href="#">Link 1</a></li>
+                          <li class=""><a class="grey-text" href="#">Link 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
 
